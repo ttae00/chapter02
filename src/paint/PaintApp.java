@@ -14,6 +14,12 @@ public class PaintApp {
 		p2.setX(10);
 		p2.setY(23);
 		p2.show();
+		
+		Point pt2= new Point(50,100);
+		pt2.show();
+		
+		p1.show(false);
+		p2.show(false);
 	}
 
 }

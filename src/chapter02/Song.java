@@ -9,6 +9,24 @@ public class Song {
 	private int year;
 	private int track;
 	
+	public Song(){
+		this("","","","",0,0);
+	}
+	public Song(String artist, String title, String album, String composer, int track, int year) {
+		// TODO Auto-generated constructor stub
+		this.album=album;
+		this.artist=artist;
+		this.title=title;
+		this.composer= composer;
+		this.track= track;
+		this.year= year;
+	}
+	public Song(String artist, String title) {
+		// TODO Auto-generated constructor stub
+		
+		this.artist=artist;
+		this.title=title;
+	}
 	public String getTitle() {
 		return title;
 	}
