@@ -8,18 +8,43 @@ public class PaintApp {
 		Point p1= new Point();
 		p1.setX(100);
 		p1.setY(200);
-		p1.show();
-		
-		Point p2= new Point();
-		p2.setX(10);
-		p2.setY(23);
-		p2.show();
-		
 		Point pt2= new Point(50,100);
-		pt2.show();
+		Point cp= new ColorPoint(500,500,"red");
+	
+		Rectangle rec= new Rectangle();
+		Circle circle= new Circle();
+		Triangle tri = new Triangle();
 		
-		p1.show(false);
-		p2.show(false);
+		draw(p1);
+		draw(pt2);
+		draw(cp);
+		
+	/*	drawRectangle(rec);
+		drawCircle(circle);*/
+		draw(circle);
+		draw(rec);
+		draw(tri);
 	}
+	
 
+
+//	public static void drawPoint(Point point){
+//		point.show();
+//	}
+	
+	public static void draw(Drawable drawable){
+		drawable.draw();
+	}
+//	
+//	public static void drawShape(Shape shape){
+//		
+//	}
+	
+	public static void drawRectangle(Rectangle rec){
+		rec.draw();
+	}
+	
+	public static void drawCircle(Circle circle){
+		circle.draw();
+	}
 }
