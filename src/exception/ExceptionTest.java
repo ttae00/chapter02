@@ -13,7 +13,14 @@ public class ExceptionTest {
 			System.out.println("죄송합니다 프로그램이 오류가 발생했습니다. 다시 실행해주세요.");
 		
 			//log 남기기... log4J라이브러리를 사용해서 파일이나 db에 로그남기기
+			//System.out.println(ex);
 			
+			//종료
+			//System.exit(-1);
+			
+			
+			//예외처리 할 것이 없으면 
+			ex.printStackTrace();
 		}
 		
 		System.out.println("some more code1");
